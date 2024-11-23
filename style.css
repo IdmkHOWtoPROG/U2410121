@@ -1,0 +1,127 @@
+/* Importing a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    background-color: #f9f9f9; /* Softer background */
+    color: #333; /* Dark text for better contrast */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #009688;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Section blocks */
+.block {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:hover {
+    transform: translateY(-10px); /* Hover effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section headings */
+h2 {
+    color: #009688;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* List styles */
+ul, ol {
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+/* Links */
+a {
+    color: #ff7043;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+img {
+    width: 150px;  /* Fixed width */
+    height: 150px; /* Fixed height */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;  /* Ensures the images are cropped properly */
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .block {
+        padding: 20px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    footer {
+        font-size: 1em;
+    }
+}
